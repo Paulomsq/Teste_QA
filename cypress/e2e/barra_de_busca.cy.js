@@ -11,6 +11,12 @@ describe('Barra de Busca', () => {
       })
     })
 
+  it('Busca por Parachoque', () => {
+    cy.get('input[id="neemu-input"]').type("Parachoque ");
+    cy.get('input[value="Buscar"]').click();
+    cy.get('h3').should('contain', 'Parachoque');
+  })
+
   it('Busca por Capacete clicando na Lupa', () => {
     cy.get('input[id="neemu-input"]').type("Capacete");
     cy.get('input[value="Buscar"]').click();
@@ -29,12 +35,6 @@ describe('Barra de Busca', () => {
       .and('contain', 'Renault');
   })
 
-  it('Busca por Parachoque', () => {
-    cy.get('input[id="neemu-input"]').type("Parachoque ");
-    cy.get('input[value="Buscar"]').click();
-    cy.get('h3').should('contain', 'Parachoque');
-  })
-
   it('Busca por Parachoque Cromado', () => {
     cy.get('input[id="neemu-input"]').type("Parachoque Cromado");
     cy.get('input[value="Buscar"]').click();
@@ -49,13 +49,12 @@ describe('Barra de Busca', () => {
       .and('contain', 'Onix');
   })
 
-  it.only('Busca por Farol Milha Saveiro', () => {
+  it('Busca por Farol Milha Saveiro', () => {
     cy.get('input[id="neemu-input"]').type("Farol Milha Saveiro");
     cy.get('input[value="Buscar"]').click();
     cy.get('h3').should('contain', 'Farol')
       .and('contain', 'Milha')
       .and('contain', 'Saveiro');
-    
-    })
+  })
 
 })
