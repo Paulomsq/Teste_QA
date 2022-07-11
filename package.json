@@ -1,0 +1,22 @@
+{
+  "name": "barra_de_busca",
+  "version": "1.0.0",
+  "description": "Desafio técnico QA ViaHub.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paulomsq/Projeto_Extra.git"
+  },
+  "author": "Paulo Queiroz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paulomsq/Projeto_Extra/issues"
+  },
+  "homepage": "https://github.com/Paulomsq/Projeto_Extra#readme",
+  "dependencies": {
+    "cypress": "^10.3.0"
+  }
+}
